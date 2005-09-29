@@ -8,7 +8,7 @@ Summary:	%{_pearname} - Tool to create Code generaters that operate on XML descr
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 %define	_rc rc1
-%define	_rel 0.1
+%define	_rel 0.2
 Release:	%{_rc}.%{_rel}
 License:	PHP
 Group:		Development/Languages/PHP
@@ -44,21 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/CodeGen/Extension.php
-%{php_pear_dir}/CodeGen/XmlParser.php
-%{php_pear_dir}/CodeGen/ExtensionParser.php
-%{php_pear_dir}/CodeGen/Element.php
-%{php_pear_dir}/CodeGen/Release.php
-%{php_pear_dir}/CodeGen/Maintainer.php
-%{php_pear_dir}/CodeGen/License.php
-%{php_pear_dir}/CodeGen/License/PHP.php
-%{php_pear_dir}/CodeGen/License/BSD.php
-%{php_pear_dir}/CodeGen/License/LGPL.php
-%{php_pear_dir}/CodeGen/Command.php
-%{php_pear_dir}/CodeGen/Tools/Code.php
-%{php_pear_dir}/CodeGen/Tools/Getopt.php
-%{php_pear_dir}/CodeGen/Tools/Outbuf.php
-%{php_pear_dir}/CodeGen/Tools/Platform.php
-%{php_pear_dir}/CodeGen/Tools/Indent.php
-%{php_pear_dir}/CodeGen/Tools/Tokenizer.php
-%{php_pear_dir}/CodeGen/Tools/FileReplacer.php
+%{php_pear_dir}/%{_class}
