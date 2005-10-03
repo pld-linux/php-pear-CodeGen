@@ -5,6 +5,7 @@
 %define		_pearname	CodeGen
 
 Summary:	%{_pearname} - Tool to create Code generaters that operate on XML descriptions
+Summary(pl):	%{_pearname} - narzêdzie do tworzenia generatorów kodu operuj±cych na opisach XML
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 %define	_rc rc1
@@ -17,8 +18,8 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
 URL:		http://pear.php.net/package/CodeGen
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
-Requires:	php-pear-PEAR >= 1:1.3
 Requires:	php-pear-Console_Getopt >= 1.0
+Requires:	php-pear-PEAR >= 1:1.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,6 +29,13 @@ applications like CodeGen_PECL and CodeGen_MySqlUDF (not released
 yet).
 
 In PEAR status of this package is: %{_status}.
+
+%description -l pl
+To jest "abstrakcyjny" pakiet udostêpniaj±cy podstawowy szkielet dla
+aplikacji takich jak CodeGen_PECL czy CodeGen_MySqlUDF (jeszcze nie
+opublikowanego).
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %pear_package_setup
