@@ -17,6 +17,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
 # Source0-md5:	a05097609f6b8ed42d9acf263c9bb463
 URL:		http://pear.php.net/package/CodeGen
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:5
 Requires:	php-pear
 Requires:	php-pear-Console_Getopt >= 1.0
 Requires:	php-pear-PEAR >= 1:1.3
