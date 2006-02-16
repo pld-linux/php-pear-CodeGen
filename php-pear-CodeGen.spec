@@ -4,12 +4,12 @@
 %define		_status		beta
 %define		_pearname	CodeGen
 
+%define	_rc rc1
+%define	_rel 0.2
 Summary:	%{_pearname} - Tool to create Code generaters that operate on XML descriptions
 Summary(pl):	%{_pearname} - narzêdzie do tworzenia generatorów kodu operuj±cych na opisach XML
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-%define	_rc rc1
-%define	_rel 0.2
 Release:	%{_rc}.%{_rel}
 License:	PHP
 Group:		Development/Languages/PHP
@@ -20,7 +20,7 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:5
 Requires:	php-pear
 Requires:	php-pear-Console_Getopt >= 1.0
-Requires:	php-pear-PEAR >= 1:1.3
+Requires:	php-pear-PEAR-core >= 1:1.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
