@@ -3,7 +3,7 @@
 %define		_pearname	CodeGen
 
 Summary:	%{_pearname} - Tool to create Code generaters that operate on XML descriptions
-Summary(pl.UTF-8):   %{_pearname} - narzędzie do tworzenia generatorów kodu operujących na opisach XML
+Summary(pl.UTF-8):	%{_pearname} - narzędzie do tworzenia generatorów kodu operujących na opisach XML
 Name:		php-pear-%{_pearname}
 Version:	1.0.2
 Release:	1
